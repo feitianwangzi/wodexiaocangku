@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			.a {
+				width: 50px;
+				height: 50px;
+				border: 3px solid red;
+				border-radius: 30%;
+				box-shadow:inset 0px 0px 10px 2px black;
+			}
+			.b {
+				border: 2px solid #ffaa00;
+				background-color: gold;
+				width: 100px;
+				height: 32px;
+				margin-left: 20px;
+				font-size: 12px;
+				text-align: center;
+				display: none;
+			}
+			.c {
+				width: 35px;
+				color: blue;
+				border-bottom: 1px solid;
+				cursor: pointer;
+			}
+			.d {
+				width: 300px;
+				height: 300px;
+				background-color: antiquewhite;
+				position: absolute;
+				left: 50%;
+				top: 50%;
+				margin-top: -150px;
+				margin-left: -150px;
+				display: none;
+			}
+			.e {
+				width: 20px;
+				height: 20px;
+				border: 1px solid crimson;
+				text-align: center;
+				margin-left:270px ;
+				margin-top: 10px;
+				cursor: pointer;
+			}
+			.g {
+				height: 375px;
+				width: 300px;
+				border: 1px solid;
+			}
+			.g_da {
+				height: 300px;
+				width: 300px;
+				margin-bottom: 10px;
+				}
+			.g_xiao1,.g_xiao2,.g_xiao3  {
+				height: 50px;
+				width: 50px;
+				float: left;
+				margin-right: 25px;
+				margin-left: 20px;
+			}
+			.h {
+				width: 170px;
+				position: relative;
+			}
+			.h_1 {
+				cursor: pointer;
+				position: absolute;
+				right: 0;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="a"></div>
+		<div class="b">今天天气真好^_^这是第6周作业</div>
+		<br>
+		<div class="c">登录</div>
+		<div class="d">
+			<div class="e">X</div>
+		</div>
+		<br>
+		<input class="f" type="text" value="请点击我" />
+		<br><br>
+		<div class="g">
+			<div class="g_da">
+				<img src="img/1.jpg" width="300px" height="300px" id="img1">
+			</div>
+			<div class="g_xiao1">
+				<img src="img/1.jpg" width="50px" height="50px" id="img2">
+			</div>
+			<div class="g_xiao2">
+				<img src="img/2.jpg" width="50px" height="50px" id="img3">
+			</div>
+			<div class="g_xiao3">
+				<img src="img/3.jpg" width="50px" height="50px" id="img4">
+			</div>
+		</div>
+		<br>
+		<div class="h">
+			<img src="img/4.png" class="h_1">
+			<input type="password" class="h_2"/>
+		</div>
+		<script>
+		const a=document.querySelector('.a');
+		const b=document.querySelector('.b');
+		a.onmouseover=function(){
+			b.style.display='block';
+		}
+		a.onmouseout=function(){
+			b.style.display='none';
+		}
+		//第二题
+		const c=document.querySelector('.c');
+		const d=document.querySelector('.d');
+		const e=document.querySelector('.e');
+		c.onclick=function(){
+			d.style.display='block';
+		}
+		e.onclick=function(){
+			d.style.display='none';
+		}
+		//第三题
+		const f=document.querySelector('.f');
+		
+		f.onfocus=function() {
+			if(f.value==='请点击我'){
+				f.value ='';
+			}
+		}
+		f.onblur=function() {
+			if(f.value===''){
+				f.value ='请点击我';
+			}
+		}
+		//第4题
+		const g_da=document.querySelector('.g_da #img1');
+		const g_xiao1=document.querySelector('.g_xiao1 #img2');
+		const g_xiao2=document.querySelector('.g_xiao2 #img3');
+		const g_xiao3=document.querySelector('.g_xiao3 #img4');
+		g_xiao1.onmouseover=function(){
+			g_da.src='img/1.jpg';
+		}
+		g_xiao2.onmouseover=function(){
+			g_da.src='img/2.jpg';
+		}
+		g_xiao3.onmouseover=function(){
+			g_da.src='img/3.jpg';
+		}
+		//第5题
+		let mima=2;
+		document.querySelector('.h .h_1').onclick=function() {
+			if (mima % 2 == 0) {
+				document.querySelector('.h .h_1').src='img/5.png';
+				document.querySelector('.h .h_2').type='text';
+			}else{
+				document.querySelector('.h .h_1').src='img/4.png';
+				document.querySelector('.h .h_2').type='password';
+			}
+			mima ++;
+		}
+		
+		</script>
+	</body>
+</html>
