@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		
+		<script>
+			//题一
+			document.write('<h2>题一</h2>');
+			// let a1=Number(prompt('（第一题）请输入数字a的值'));
+			// let b1=Number(prompt('（第一题）请输入数字b的值'));
+			let a1=1;
+			let b1=2;
+			document.write(`您输入的a的值是${a1},您输入的b的值是${b1},所以`);
+			if(a1>b1){
+				document.write(`a大于b。`)
+			}else if(a1<b1){
+				document.write(`a小于b。`)
+			}else  {
+				document.write(`a等于b。`)
+			};
+			document.write('<br><hr size="10" color="#800080">');
+			
+			//题二
+			document.write('<h2>题二</h2>');
+			let a=10;
+			// let a=Number(prompt('（第二题）请输入数字类型a的值'));
+			document.write(`a的值是${a},`)
+			if(a%5===0){
+				document.write(`可以被5整除。`);
+			}else{
+				document.write(`不可以被5整除。`);
+			}
+			document.write('<br><hr size="10" color="#800080">');
+			
+			//题三
+			document.write('<h2>题三</h2>');
+			document.write(`100以内的偶数是：`);
+			let z=0;
+			for(i=0;i<101;i++){
+				if(i%2===0){
+					z=z+i+' ';
+				}
+			}
+			document.write(z);
+			document.write('<br><hr size="10" color="#800080">');
+			
+			//题四
+			document.write('<h2>题四</h2>');
+			document.write(`100以内7的倍数是：`);
+			let x=1;
+			let num='';
+			while(x<100){
+				x++;
+				if(x%7===0){
+					num=num+x+' ';
+				}
+			}
+			document.write(num);
+			document.write('<br><hr size="10" color="#800080">');
+			
+			//题五
+			document.write('<h2>题五</h2>');
+			// let c=Number(prompt('（第五题）请输入数字类型a的值'));
+			// let v=Number(prompt('（第五题）请输入数字类型a的值'));
+			// let n=Number(prompt('（第五题）请输入数字类型a的值'));
+			let c=1;
+			let v=2;
+			let n=3;
+			document.write('a的值是'+c+','+'b的值是'+v+','+'c的值是'+n+','+'最大的值是：');
+			if(c>v && c>n){
+				document.write(`a的值为${c}`)
+			}else if(v>c && v>n){
+				document.write(`b的值为${v}`)
+			}else{
+				document.write(`c的值为${n}`)
+			}
+			document.write('<br><hr size="10" color="#800080">');
+			
+			//题六
+			document.write('<h2>题六</h2>');
+			document.write(`100以内的偶数是：`);
+			let d=0;
+			let f=0;
+			for(i=0;i<101;i++){
+				if(i%2===0){
+					d=d+i+' ';
+				}else{
+					f=f+i+' ';
+				}
+			}
+			document.write(d+'<br>');
+			document.write(`100以内的奇数是：`);
+			document.write(f);
+			document.write('<br><hr size="10" color="#800080">');
+			
+			//题七
+			document.write('<h2>题七</h2>');
+			let achearr=[1,2,3];
+			let bchearr=[];
+			for(let i=0;i<=achearr.length;i++){
+				bchearr.push(achearr.pop());
+			}
+			bchearr.push(achearr[0]);
+			document.write(bchearr);
+			document.write('<br><hr size="10" color="#800080">');
+			
+			//题八
+			document.write('<h2>题八</h2>');
+			document.write('<input type="text" placeholder="输入a" class="a2">');
+			document.write('<input type="text" placeholder="输入b" class="b2">');
+			document.write('<input type="button" value="比较" class="bijiao">');
+			document.write('<p class="p1"></p>');
+			let a2 = document.querySelector('.a2');
+			let bijiao = document.querySelector('.bijiao');
+			let b2 = document.querySelector('.b2');
+			let p1 = document.querySelector('.p1');
+			bijiao.onclick=function(){
+				if(isNaN(a2.value) || isNaN(b2.value)){
+					p1.textContent='不是数字类型！';
+				}else if(a2.value==='' || b2.value===''){
+					p1.textContent='有空值！';
+				}else if(a2.value>b2.value){
+					p1.textContent='a大于b';
+				}else if(a2.value<b2.value){
+					p1.textContent='b小于a';
+				}else {
+					p1.textContent='b等于a';
+				}
+			}
+		</script>
+	</body>
+</html>
