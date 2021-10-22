@@ -9,10 +9,8 @@
 		<script>
 			//题一
 			document.write('<h2>题一</h2>');
-			// let a1=Number(prompt('（第一题）请输入数字a的值'));
-			// let b1=Number(prompt('（第一题）请输入数字b的值'));
-			let a1=1;
-			let b1=2;
+			let a1=Number(prompt('（第一题）请输入数字a的值'));
+			let b1=Number(prompt('（第一题）请输入数字b的值'));
 			document.write(`您输入的a的值是${a1},您输入的b的值是${b1},所以`);
 			if(a1>b1){
 				document.write(`a大于b。`)
@@ -25,8 +23,7 @@
 			
 			//题二
 			document.write('<h2>题二</h2>');
-			let a=10;
-			// let a=Number(prompt('（第二题）请输入数字类型a的值'));
+			let a=Number(prompt('（第二题）请输入数字类型a的值'));
 			document.write(`a的值是${a},`)
 			if(a%5===0){
 				document.write(`可以被5整除。`);
@@ -63,12 +60,9 @@
 			
 			//题五
 			document.write('<h2>题五</h2>');
-			// let c=Number(prompt('（第五题）请输入数字类型a的值'));
-			// let v=Number(prompt('（第五题）请输入数字类型a的值'));
-			// let n=Number(prompt('（第五题）请输入数字类型a的值'));
-			let c=1;
-			let v=2;
-			let n=3;
+			let c=Number(prompt('（第五题）请输入数字类型a的值'));
+			let v=Number(prompt('（第五题）请输入数字类型b的值'));
+			let n=Number(prompt('（第五题）请输入数字类型c的值'));
 			document.write('a的值是'+c+','+'b的值是'+v+','+'c的值是'+n+','+'最大的值是：');
 			if(c>v && c>n){
 				document.write(`a的值为${c}`)
