@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<div id="t1">
+			<h2>第一题</h2>
+			<p></p>
+		</div>
+		<hr size="10" color="#800080">
+		
+		<div id="t2">
+			<h2>第二题</h2>
+			<p></p>
+		</div>
+		<hr size="10" color="#800080">
+		
+		<div id="t3">
+			<h2>第三题</h2>
+			<p></p>
+		</div>
+		<hr size="10" color="#800080">
+		
+		<div id="t4">
+			<h2>第四题</h2>
+			<input type="text" class="t41">
+			<button class="t42">判断</button>
+			<p></p>
+		</div>
+		<hr size="10" color="#800080">
+		
+		<div id="t5">
+			<h2>第五题</h2>
+			<button class="t51">随机四位数</button>
+			<p></p>
+		</div>
+		<hr size="10" color="#800080">
+		
+		<div id="t6">
+			<h2>第六题</h2>
+			<input type="text" class="t61">
+			<select class="t62">
+				<option value ="+">+</option>
+				<option value ="-">-</option>
+				<option value ="*">*</option>
+				<option value ="/">/</option>
+			</select>
+			<input type="text" class="t63">
+			<button class="t64">=</button>
+			<input type="text" class="t65">
+		</div>
+		<hr size="10" color="#800080">
+			
+		<div id="t7">
+			<h2>第七题</h2>
+			<p></p>
+		</div>
+		<hr size="10" color="#800080">
+		<script>
+			//题一
+			let a = '1,2,3,4';
+			let x=a.split(',');
+			x.reverse();
+			let a1 = document.querySelector('#t1 p');
+			a1.textContent = x;
+			//题二
+			let b='1.2.3.4';
+			let b1=b.substr(0,b.length-1);
+			let b3 = document.querySelector('#t2 p');
+			b3.textContent = b1+'*';
+			//题三
+			const c = document.querySelector('#t3 p');
+			let c1= new Date();//获得当前时间
+			c.textContent = (`${c1.getFullYear()}年${c1.getMonth()+1}月${c1.getDate()}日${c1.getHours()}时${c1.getMinutes()}分${c1.getSeconds()}秒星期${c1.getDay()}`);
+			//题四
+			var d = document.querySelector('#t4 .t41');
+			const d1 = document.querySelector('#t4 .t42');
+			const d2 = document.querySelector('#t4 p');
+			d1.onclick = function() {
+			 if (d.value.length<=10 && d.value.length>=2) {
+			   d2.textContent ='字符串长度符合要求';
+			  }else {
+			   d2.textContent = '字符串长度不符合要求';
+			  }
+			};
+			//题五
+			const e = document.querySelector('#t5 .t51');
+			const e1 = document.querySelector('#t5 p');
+			e.onclick = function(){
+			 e2 = Math.floor(Math.random()*10);
+			 e3 = Math.floor(Math.random()*10);
+			 e4 = Math.floor(Math.random()*10);
+			 e5 = Math.floor(Math.random()*10);
+			 e1.textContent= `${e2}${e3}${e4}${e5}`;
+			}
+			//题六
+			let f = document.querySelector('#t6 .t61');
+			   const f1 = document.querySelector('#t6 .t62');
+			   let f2 = document.querySelector('#t6 .t63');
+			   const f3 = document.querySelector('#t6 .t64')
+			   let f4 = document.querySelector('#t6 .t65');
+			   f3.addEventListener('click',function(){
+			    if (f1.value == '+') {
+			     f4.value = Number(f.value)+Number(f2.value);
+			    }else if(f1.value == '-'){
+			     f4.value = Number(f.value)-Number(f2.value);
+			    }else if(f1.value == '*'){
+			     f4.value = Number(f.value)*Number(f2.value);
+			    }else if(f1.value == '/'){
+			     f4.value = Number(f.value)/Number(f2.value);
+			    }
+			   });
+			   //题七
+			   function gg(){
+			       const g = document.querySelector('#t7 p');
+			       let g1 = new Date();
+			       g.textContent = (`${g1.getFullYear()}年${g1.getMonth()}月${g1.getDate()}日${g1.getHours()}时${g1.getMinutes()}分${g1.getSeconds()}秒星期${g1.getDay()}`);
+			      }
+			      gg();
+			      setInterval(gg,1000);
+		</script>
+	</body>
+</html>
