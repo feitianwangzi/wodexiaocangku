@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+		.c{
+			border: 1px solid;
+			width: 150px;
+			margin: 0 ;
+			padding: 0 ;
+			list-style: none ;
+			padding-left: 20px;
+			margin-top: 10px;
+		}	
+		hr {
+			text-align: center;
+			background-color: #808080;
+			height: 10px;
+			width: 98%;
+		}
+		.t2{
+			border: 1px solid;
+			width: 600px;
+			padding-left: 5px;
+		}
+		.t2 dl dt {
+		    width: 55px;
+		    float: left;
+		}
+		.ti{
+			margin-left: 170px;
+		}
+		.t3 {
+		    width: 605px;
+		    
+		}
+		.t3 p {
+		    display: inline-block;
+				color: #800080;
+		}
+		.t3 dl {
+		    margin-top: 20px;
+		}
+		.t3 dt[class^="t3_"] {
+		    background-color: #abcdef;
+		    width: 100px;
+		    height: 40px;
+		    float: left;
+		    margin-top: 5px;
+		    line-height: 40px;
+		    text-align: center;
+		    font-weight: 700;
+		    font-size: 18px;
+		}
+		.t3 dt:first-child {
+		    margin-top: 0px;
+		}
+		.t3 dd {
+		    width: 495px;
+		    height: 30px;
+		    background-color: #fddcb7;
+		    margin-left: 105px;
+		    margin-top: 5px;
+		    padding: 5px 0 5px 5px;
+		}
+		.t3 .b_subim {
+		    width: 595px;
+		    height: 30px;
+		    margin-top: 5px;
+		    background-color: #aabbcb;
+		    padding: 5px;
+		    text-align: center;
+		}
+		.t3 .mz input {
+		    height: 25px;
+		    padding-left: 10px;
+				width: 240px;
+		}
+		.t3 .pwd input {
+			height: 25px;
+			padding-left: 10px;
+			width: 220px;
+		}
+		.t3 .sex {
+		    line-height: 30px;
+				font-weight: 700;
+		}
+		.t3 .ss select {
+		    width: 50px;
+		    height: 30px;
+		}
+		.t3 .course label {
+		    margin-left: 10px;
+		    font-weight: 700;
+		}
+		.t3 .course {
+		    line-height: 30px;
+		}
+		.t3 .course label input {
+		    box-shadow: -1px -1px 1px 0px gray;
+		    border: 1px #404040 solid;
+		    border-bottom-color: #b6b6b6;
+		    border-right-color: #b6b6b6;
+		}
+		.t3 .b_subim input {
+		    width: 100px;
+		    height: 30px;
+		    box-shadow: 1px 1px 3px 2px gray;
+		    border: 1px #404040 solid;
+		    font-weight: 700;
+		    font-size: 17px;
+		    background-color: #d4cfc6;
+		    cursor: pointer;
+		}
+
+		</style>
+	</head>
+	<body>
+		<h2>题一</h2>
+		<div>
+			<input type="checkbox"  id="a1" class="a" />
+			<label for="a1">全选/全不选</label>&nbsp;
+			<button type="button" class="b">反选</button>
+			<ul class="c">
+				<li>
+					风<input type="checkbox" class="d" />
+				</li>
+				<li>
+					花<input type="checkbox" class="d" />
+				</li>
+				<li>
+					雪<input type="checkbox" class="d" />
+				</li>
+				<li>
+					月<input type="checkbox" class="d" />
+				</li>
+			</ul>
+		</div>
+		<hr>
+		
+		
+		<h2>题二</h2>
+		<div class="t2">
+			<form action="./ok.html">
+				<dl>
+					<dt>姓名:</dt>
+					<dd class="t2_xm">
+						<input type="text"/>
+						<p></p>
+					</dd>
+					<dt>密码：</dt>
+					<dd class="t2_mm">
+						<input type="password"/>
+						<p></p>
+					</dd>
+					<dt>性别：</dt>
+					<dd class="t2_xb">
+						<input type="radio" name="radio">男
+						<input type="radio" name="radio">女
+						<p></p>
+					</dd>
+					<dt>年龄：</dt>
+					<dd class="t2_nl">
+						<select>
+						    <option value="1">10</option>
+						    <option value="2">11</option>
+						    <option value="3">12</option>
+						    <option value="4">13</option>
+						    <option value="5">14</option>
+						    <option value="6">15</option>
+						    <option value="7">16</option>
+						    <option value="8">17</option>
+						    <option value="9">18</option>
+						    <option value="10">19</option>
+						    <option value="11">20</option>
+								<option value="12">21</option>
+								<option value="13">22</option>
+								<p></p>
+						</select>
+					</dd>
+					<dt>爱好：</dt>
+					<dd class="t2_ah">
+						<input type="checkbox">读书&nbsp;&nbsp;
+						<input type="checkbox">音乐&nbsp;&nbsp;
+						<input type="checkbox">上网
+						<p></p>
+					</dd>
+					<dt>简介：</dt>
+					<dd class="t2_jj">
+						<textarea cols="25" rows="10"></textarea>
+						<p></p>
+					</dd>
+				</dl>
+				<input type="button" class="t2_tj" value="提交">
+				<input type="reset" value="重置">
+			</form>
+		</div>
+		<hr>
+		<h2>题二（2)</h2>
+		<div class="t3">
+		  <h2 class="ti">Information Form</h2>
+		  <form action="./ok.html">
+		  <div class="conter">
+		    <dl>
+					<dt class="t3_mz">name</dt>
+					<dd class="mz">
+		        <input type="text"> <p></p>
+		      </dd>
+		            <dt class="t3_pwd">pwd</dt>
+		            <dd class="pwd">
+		               <input type="password"><p></p>
+		            </dd>
+		            <dt class="t3_sex">sex</dt>
+		            <dd class="sex">
+		              <input type="radio" name="gender">male
+		              <input type="radio" name="gender">female
+		               <p></p>
+		            </dd>
+		            <dt class="t3_age">age</dt>
+		            <dd class="ss">
+		                <select name="" id="" size="1">
+		                <option value="">18</option>
+		                <option value="">19</option>
+		                <option value="">20</option>
+		                <option value="">21</option>
+		                <option value="">22</option>
+		                </select>
+		            </dd>
+		            <dt class="t3_course">course</dt>
+		            <dd class="course">
+		            <input type="checkbox">Chinese
+		            <input type="checkbox">Math
+		            <input type="checkbox">English
+		            <p></p>
+		            </dd>
+		            <dt class="b_subim">
+		                <input type="button" value="Submit it!" class="ba_subim">
+		                <input type="reset" value="Reset it!">
+		            </dt>
+		        </dl>
+		    </div>
+		    </form>
+		</div>
+		<img src="img/Snipaste_2021-11-05_16-52-45.png">
+		<script>
+			let a = document.querySelector('.a');
+			let b = document.querySelector('.b');
+			const c = document.querySelectorAll('.d');
+			a.onclick = function() {
+			   for(let i=0; i<c.length; i++){
+			     c[i].checked = true;
+			   }
+			   if (a.checked == false) {
+			     for(let a=0; a<c.length; a++){
+						c[a].checked = false;
+			     }
+			    }
+			   };
+			b.onclick = function() {
+			  for(let i=0; i<c.length; i++){
+			     c[i].checked = !c[i].checked;
+			   }
+			 };
+			 //题二的第一小题
+			{
+			const xingming = document.querySelector('.t2_xm input');
+			const xmz = document.querySelector('.t2_xm p');
+			const mima = document.querySelector('.t2_mm input');
+			const mmz = document.querySelector('.t2_mm p');
+			const xingbie = document.querySelectorAll('.t2_xb input');
+			const xbz = document.querySelector('.t2_xb p');
+			const aihao = document.querySelectorAll('.t2_ah input');
+			const ahz = document.querySelector('.t2_ah p');
+			const jianjie = document.querySelector('.t2_jj textarea');
+			const jjz = document.querySelector('.t2_jj p');
+			const tijiao = document.querySelector('.t2_tj')
+			     tijiao.addEventListener('click',function(){
+			         let fash = true;
+			             if (xingming.value === ''){
+			                xmz.textContent = '姓名不能为空';
+			                 fash = false;
+			             } else {
+			                 xmz.textContent = '';
+			             }
+			             if (mima.value.length >= 2 && mima.value.length <= 10) {
+			                 mmz.textContent = '';
+			             } else {
+			                 mmz.textContent = '密码长度2-10位';
+			                 fash = false;
+			             }
+			             if (xingbie[0].checked == false && xingbie[1].checked == false) {
+			                 xbz.textContent = '请选择性别';
+			                 fash = false;
+			             } else {
+			                 xbz.textContent = '';
+			             }
+			             if (aihao[0].checked == false && aihao[1].checked == false && aihao[2].checked == false) {
+			                 ahz.textContent = '请选择爱好';
+			                 fash = false;
+			             } else {
+			                 ahz.textContent = '';
+			             }
+			             if (jianjie.value.length >= 10) {
+			                 jjz.textContent = '';
+			             } else {
+			                 jjz.textContent = '简介至少10个字符';
+			                 fash = false;
+			             }
+			             if (fash == true) {
+			                 tijiao.type = 'submit';
+			             }
+			     });
+			 }
+			 //题二的第二题
+			 {
+			 const mz = document.querySelector('.mz input');
+			 const mzp = document.querySelector('.mz p');
+			 const pwd = document.querySelector('.pwd input');
+			 const pwdp = document.querySelector('.pwd p');
+			 const sex = document.querySelectorAll('.sex input');
+			 const sexp = document.querySelector('.sex p');
+			 const course = document.querySelectorAll('.course input');
+			 const cp = document.querySelector('.course p');
+			 const btn2 = document.querySelector('.ba_subim');
+			     btn2.addEventListener('click',function(){
+			         let flsh = true;
+			         let f = 0;
+			         if (mz.value == ''){
+			                 mzp.textContent = '姓名不能为空';
+			                 flsh = false;
+			         } else {
+			             mzp.textContent = '';
+			         }
+			         if (pwd.value.length >= 2 && pwd.value.length <= 10) {
+			                 pwdp.textContent = '';
+			         } else {
+			             pwdp.textContent = '密码长度2-10位';
+			             flsh = false;
+			         }
+			         if (sex[0].checked == false && sex[1].checked == false) {     
+			             sexp.textContent = '性别必须选择一项';
+			             flsh = false;
+			         } else {
+			             sexp.textContent = '';
+			         }
+			         for (let i = 0; i < course.length; i++){
+			             if (course[i].checked == true) {
+			                 f++;
+			             }
+			         }
+			         if(f >= 2) {
+			             cp.textContent = '';
+			         } else {
+			             cp.textContent = '课程至少选择两项';
+			             flsh = false;
+			         }
+			         if (flsh == true) {
+			             btn2.type = 'submit';
+			         }
+			         f = 0;
+			     })
+			 }
+		</script>
+	</body>
+</html>
