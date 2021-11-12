@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		  <h1>第一题</h1>
+		  <input type="text" id="val"/>
+			<button type="button" class="tian_jia" >添加</button><br>
+		  <ol class="list"></ol><br>
+		  <button type="button" class="qing_kong">清空列表</button>
+		  <script src="libs/jquery.js"></script>
+		  <script>
+		   $('.tian_jia').click(function(){
+		    if(!$('#val').val()){
+		     alert('还未填写内容')
+		    }else{
+		     $('.list').prepend(`<li><span class="one">X </span>${$('#val').val()}</li>`);
+		     $('.one').click(function(){
+		      $(this).parent().remove()
+		     })
+		     $('#val').val('');
+		    }
+		   })
+		   $('.qing_kong').click(function(){
+		    $('.list').remove()
+		   })
+		</script>
+		<hr>
+		<h5>第二题</h5>
+		<p>
+			1~10:&nbsp;&nbsp;C B C B D B A C A A
+			<br>11~20:A A B D B C A B A D
+		</p>
+		<hr>
+		<h5>第三题</h5>
+		<pre>
+		for($i=1;$i<=100;$i++){
+			echo $i.' ';
+			};
+		</pre>
+		<hr>
+		<h5>第四题</h5>
+		<pre>
+		for($i=1;$i<=100;$i++){
+			if($i%2===0){
+				echo $i.' ';
+			}
+		};
+		</pre>
+		<hr>
+		<h5>第五题</h5>
+		<pre>
+		for($i=1;$i<=100;$i++){
+			if($i%3===0 && $i%5===0){
+				echo 'foobar ';
+			}else if($i%3===0){
+				echo 'foo ';
+			}else if($i%5===0){
+				echo 'bar ';
+			}else{
+				echo $i.' ';
+			}
+		};
+		</pre>
+	</body>
+</html>
