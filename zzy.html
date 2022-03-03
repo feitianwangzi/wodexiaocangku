@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			body {
+				perspective: 1000px;
+			}
+
+			.box {
+				transform-style: preserve-3d;
+				position: relative;
+				left: 50%;
+				top: 50%;
+				margin-left: -200px;
+				margin-top: 200px;
+				width: 400px;
+				height: 400px;
+				animation: name 6s linear infinite;
+			}
+
+			@keyframes name {
+				0% {
+					transform: rotateX(0deg) rotateY(0deg);
+				}
+
+				100% {
+					transform: rotateX(360deg) rotateY(-360deg);
+				}
+			}
+
+			.box .a {
+				width: 100px;
+				height: 100px;
+				position: absolute;
+				left: 50%;
+				top: 50%;
+				margin-left: -50px;
+				margin-top: -50px;
+			}
+
+			.box:hover .a {
+				box-shadow: 0px 0px 10px currentcolor;
+			}
+
+			.box .a1 {
+				color: #FF0000;
+				background-color: #FF0000;
+				transform: translateZ(50px);
+			}
+
+			.box .a2 {
+				color: #00aa00;
+				background-color: #00aa00;
+				transform: rotateY(180deg) translateZ(50px);
+			}
+
+			.box .a3 {
+				color: yellow;
+				background-color: #ffff00;
+				transform: rotateX(90deg) translateZ(50px);
+			}
+
+			.box .a4 {
+				color: blue;
+				background-color: #0000ff;
+				transform: rotateX(-90deg) translateZ(50px);
+			}
+
+			.box .a5 {
+				color: #ffa71a;
+				background-color: #ffa71a;
+				transform: rotatey(-90deg) translateZ(50px);
+			}
+
+			.box .a6 {
+				color: #ff55ff;
+				background-color: #ff55ff;
+				transform: rotatey(90deg) translateZ(50px);
+			}
+
+			.box .b {
+				width: 200px;
+				height: 200px;
+				background-color: #9a9a9a;
+				opacity: .4;
+				position: absolute;
+				left: 50%;
+				top: 50%;
+				margin-left: -100px;
+				margin-top: -100px;
+			}
+
+			.box .b1 {
+				transform: translateZ(100px);
+				transition: 6s;
+			}
+
+			.box:hover .b1 {
+				transform: translateZ(130px);
+			}
+
+			.box .b2 {
+				transform: translateZ(-100px);
+				transition: 6s;
+			}
+
+			.box:hover .b2 {
+				transform: translateZ(-130px);
+			}
+
+			.box .b3 {
+				transform: rotateY(90deg) translateZ(100px);
+				transition: 6s;
+			}
+
+			.box:hover .b3 {
+				transform: rotateY(90deg) translateZ(130px);
+			}
+
+			.box .b4 {
+				transform: rotateY(270deg) translateZ(100px);
+				transition: 6s;
+			}
+
+			.box:hover .b4 {
+				transform: rotateY(270deg) translateZ(130px);
+			}
+
+			.box .b5 {
+				transform: rotateX(90deg) translateZ(100px);
+				transition: 6s;
+			}
+
+			.box:hover .b5 {
+				transform: rotateX(90deg) translateZ(130px);
+			}
+
+			.box .b6 {
+				transform: rotateX(270deg) translateZ(100px);
+				transition: 6s;
+			}
+
+			.box:hover .b6 {
+				transform: rotateX(270deg) translateZ(130px);
+			}
+			.ggg {
+				text-align: center;
+				line-height: 200px;
+				font-weight: 800;
+				font-size: 30px;
+			}
+			.fff {
+				text-align: center;
+				line-height: 230px;
+				font-weight: 800;
+				font-size: 30px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box">
+			<div class="a a1 fff">张子怡</div>
+			<div class="a a2 fff">张子怡</div>
+			<div class="a a3 fff">张子怡</div>
+			<div class="a a4 fff">张子怡</div>
+			<div class="a a5 fff">张子怡</div>
+			<div class="a a6 fff">张子怡</div>
+			<div class="b b1 ggg">张子怡</div>
+			<div class="b b2 ggg">张子怡</div>
+			<div class="b b3 ggg">张子怡</div>
+			<div class="b b4 ggg">张子怡</div>
+			<div class="b b5 ggg">张子怡</div>
+			<div class="b b6 ggg">张子怡</div>
+		</div>
+	</body>
+</html>
