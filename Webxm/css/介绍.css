@@ -1,0 +1,170 @@
+*{margin:0;padding:0;list-style:none;}
+body{font-family:"微软雅黑";font-size:20px;}
+a:link,a:visited{text-decoration:none;font-size: 20px;font-weight: bold;}
+#header{
+	width:100%;
+	height:90px;
+	background:url(../img/2.jpg) repeat-x;
+	border-bottom:3px solid #d5d5d5;
+}
+.nav{
+	width:980px;
+	margin:0 auto;
+}
+li{float:left;}
+li a{
+	display:inline-block;
+	height:91px;
+	width:119px;
+	text-align:center;
+	line-height:70px;
+}
+li a:hover{background:url(../img/3.png) center center;}
+/*导航栏结束*/
+.www{background-color: #FAEBD7;}
+/*banner*/
+.banner{
+	width: 100%;
+	height: 550px;
+	background: url(../img/介绍banner.jpg) no-repeat center center;
+	background-size: 100% 100%;
+}
+/*上部分*/
+.js{
+	width: 980px;
+	height: 820px;
+	margin: 0 auto;
+}
+.js_1{
+	width: 530px;
+	height: 820px;
+	float: left;
+}
+.js_1_1{
+	width: 530px;
+	height: 150px;
+}
+
+.js_1_1 h2{
+	font-size: 60px;
+	font-family: 隶书;
+}
+.js_1_1 p{
+	font-size: 12px;
+	font-family: 隶书;
+}
+.js_1_2{
+	width: 530px;
+	height:400px;
+}
+.tu1{
+	width: 240px;
+	height: 400px;
+	background: url(../img/介绍2.jpg) no-repeat center center;
+	float: left;
+}
+.tu2{
+	width: 260px;
+	height: 400px;
+	background: url(../img/介绍3.jpg) no-repeat center center;
+	float: left;
+	padding-left: 20px;
+}
+.js_1_3{
+	width: 530px;
+	height:270px;
+}
+.js_1_3 h2{
+	font-size: 26px;
+}
+.js_1_3 p{
+	font-family: 隶书;
+	font-size: 10px;
+}
+.js_2{
+	width: 450px;
+	height: 820px;
+	float: left;
+}
+.tu3{
+	width: 450px;
+	height: 120px;
+	background-color: #000000;
+	background: url(../img/介绍4.jpg) no-repeat;
+}
+.tu4{
+	width: 450px;
+	height: 700px;
+	background: url(../img/介绍1.jpg) no-repeat center center;
+}
+/*下部分*/
+.xbf{
+	width: 980px;
+	height: 500px;
+	margin: 0 auto;
+}
+.xbf h3{
+	text-align: center;
+}
+.xbf h3 span{
+	color: #ff6633;
+}
+.st{
+	width: 980px;
+	height: 200px;
+	margin-bottom: 10px;
+}
+.st1{
+	width: 690px;
+	height: 200px;
+	float: left;
+	margin-right: 10px;
+	background: url(../img/介绍5.jpg) no-repeat;
+}
+.st2{
+	width: 280px;
+	height: 200px;
+	float: left;
+	background: url(../img/介绍6.jpg) no-repeat;
+}
+.xt{
+	width: 980px;
+	height: 200px;
+}
+.xt1{
+	width: 280px;
+	height: 200px;
+	float: left;
+	margin-right: 10px;
+	background: url(../img/介绍7.jpg) no-repeat;
+}
+.xt2{
+	width: 690px;
+	height: 200px;
+	float: left;
+	background: url(../img/介绍8.jpg) no-repeat;
+}
+.xt1:hover{box-shadow: gray 1px 1px 10px 1px;cursor: pointer;}
+.xt2:hover{box-shadow: gray 1px 1px 10px 1px;cursor: pointer;}
+.st1:hover{box-shadow: gray 1px 1px 10px 1px;cursor: pointer;}
+.st2:hover{box-shadow: gray 1px 1px 10px 1px;cursor: pointer;}
+.tu1:hover{box-shadow: gray 1px 1px 10px 1px;cursor: pointer;}
+.tu2:hover{box-shadow: gray 1px 1px 10px 1px;cursor: pointer;}
+.tu4:hover{box-shadow: gray 1px 1px 10px 1px;cursor: pointer;}
+/*悬浮*/
+.tree{
+	position:fixed;
+	right:2%;
+	bottom:5%;
+}
+/*尾部*/
+#footer {
+	width: 100%;
+	height: 60px;
+	background: url(../img/footer.png) repeat-x;
+	color: #555;
+	text-align: center;
+	line-height: 80px;
+	margin-top: 50px;
+	font-size: 14px;
+}

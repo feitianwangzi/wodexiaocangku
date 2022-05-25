@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>衣恋购物网站</title>
+		<link href="css/首页.css" rel="stylesheet" type="text/css"/>
+	</head>
+	<body class="www">
+		<div id="header">
+			<ul class="nav">
+				<li class="logo"><img src="./img/logo.jpg"/></li>
+				<li><a href="首页.html" target="_blank">首页</a></li>
+				<li><a href="潮流.html"  target="_blank">潮流专栏</a></li>
+				<li><a href="注册.html"  target="_blank">注册/登录</a></li>
+				<li><a href="开店.html"  target="_blank">免费开店</a></li>
+				<li><a href="介绍.html"  target="_blank">公司介绍</a></li>
+				<li><a href="个人.html"  target="_blank">个人中心</a></li>
+			</ul>
+		</div>
+
+		
+<!--js轮播-->
+<br>
+<div class="carouselBox">
+			<ul class="imgs" style="left:0px;">
+				<li><a href="#"><img src="img/banner1.jpg" alt="1"></a></li>
+				<li><a href="#"><img src="img/banner2.jpg" alt="2"></a></li>
+				<li><a href="#"><img src="img/banner3.jpg" alt="3"></a></li>
+			</ul>
+			<div class="arrows">
+				<span class="arrowLeft">&lsaquo;</span>
+				<span class="arrowRight">&rsaquo;</span>
+			</div>
+			<ul class="dots">
+				<li class="active">1</li>
+				<li>2</li>
+				<li>3</li>
+			</ul>
+		</div>
+		<script>
+			const carouselBox = document.querySelector('.carouselBox')
+			const imgs = carouselBox.querySelector('.imgs')
+			const arrowLeft = carouselBox.querySelector('.arrowLeft')
+			const arrowRight = carouselBox.querySelector('.arrowRight')
+			const dots = carouselBox.querySelector('.dots')
+			const lis = dots.querySelectorAll('li')
+			let num = lis.length//图片数量
+			let n = 0 //当前显示图片的序号，从0开始
+			let timer=0
+			//让指定的圆点具有特殊样式
+			function changeDots(n) {
+				for(let i=0;i<num;i++) {
+					lis[i].classList.remove('active')
+				}
+				lis[n].classList.add('active')
+			}
+			//点击圆点效果，被点击的有特殊背景色，其它是普通颜色
+			for (let i=0;i<num;i++) {
+                lis[i].addEventListener('click',function () {
+					n = i//更新当前显示的图片的序号
+					imgs.style.left = -980 * n + 'px'
+					changeDots(n)
+                })
+            }
+			//点击箭头效果
+			//右箭头
+			arrowRight.addEventListener('click',function () {
+				n++//更新当前显示的图片的序号
+				//边界判断，超过最大值，设置为最小值
+				if (n > num - 1) {
+					n = 0
+				}
+				imgs.style.left = -980 * n + 'px'
+				changeDots(n)
+			})
+			//左箭头
+			arrowLeft.addEventListener('click',function () {
+				n--//更新当前显示的图片的序号
+				//边界判断，超过最小值，设置为最大值
+				if (n < 0) {
+					n=num - 1
+				}
+				imgs.style.left = -980 * n +'px'
+				changeDots(n)
+			})
+			//自动播放
+			// 鼠标放上去停止播放
+			carouselBox.addEventListener('mouseover',function () {
+				clearInterval(timer)
+			})
+			// 鼠标离开继续播放
+			// carouselBox.addEventListener('mouseout',function () {
+			// 	timer = setInterval(function () {
+			// 		arrowRight.click()
+			// 	},3000)
+			// })
+			carouselBox.onmouseout = function () {
+				timer = setInterval(function () {
+					arrowRight.click()
+				},2500)
+			}
+			carouselBox.onmouseout()
+
+		</script>
+		
+		
+<!--搭配指南-->	
+		<div class="s">
+			<h2>女士Girl / 搭配指南</h2>
+			<div class="ss"><img src="img/首页5.jpg"></div>
+			<div class="ss">
+				<div class="sss"><img src="img/首页6.jpg"></div>
+				<div class="sss"><img src="img/首页2.jpg"></div>
+			</div>
+		</div><br/><br/><br/><br/>
+		<div class="a">
+			<h2>男士Man / 搭配指南</h2>
+			<div class="aa">
+				<div><img src="img/首页4.jpg"></div>
+				<div><img src="img/首页1.jpg"></div>
+			</div>
+			<div class="aaa"><img src="img/首页3.jpg"></div>
+		</div>
+<!--悬浮-->
+		</div>
+		<div class="tree">
+			<img src="img/二维码.jpg"/></div>
+		</div>
+		
+		
+<!--尾部-->
+		<div id="footer">
+			衣恋购物网站版权所有2020-2021京ICP备1000113200156号&nbsp;&nbsp;
+							京公网安备110108007702</div>
+	</body>
+</html>

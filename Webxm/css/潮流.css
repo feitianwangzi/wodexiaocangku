@@ -1,0 +1,293 @@
+* {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+body {
+	font-family: "微软雅黑";
+	font-size: 20px;
+}
+
+a:link,
+a:visited {
+	text-decoration: none;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+#header {
+	width: 100%;
+	height: 90px;
+	background: url(../img/2.jpg) repeat-x;
+	border-bottom: 3px solid #d5d5d5;
+}
+
+.nav {
+	width: 980px;
+	margin: 0 auto;
+}
+
+li {
+	float: left;
+}
+
+li a {
+	display: inline-block;
+	height: 91px;
+	width: 119px;
+	text-align: center;
+	line-height: 70px;
+}
+
+li a:hover {
+	background: url(../img/3.png) center center;
+}
+
+/* 抽屉 */
+img {
+	display: block;
+	/* 取消图片下方默认的一点白边 */
+}
+
+.drawersBox {
+	width: 980px;
+	height: 344px;
+	position: relative;
+	overflow: hidden;
+	margin: 20px auto;
+}
+
+.drawer {
+	display: flex;
+	position: absolute;
+	top: 0;
+	transition: 2s linear;
+}
+
+.drawer1 {
+	left: 0;
+}
+
+.drawer2 {
+	left: 785px;
+}
+
+.drawer3 {
+	left: 850px;
+}
+
+.drawer4 {
+	left: 915px;
+}
+
+.drawer .title {
+	box-sizing: border-box;
+	/* 元素的总高度和宽度包含内边距和边框 */
+	width: 65px;
+	height: 344px;
+	color: #fff;
+	font-size: 22px;
+	text-align: center;
+	padding: 115px 15px 0;
+	cursor: pointer;
+}
+
+.drawer1 .title {
+	background-color: #7f255f;
+}
+
+.drawer2 .title {
+	background-color: #e80;
+}
+
+.drawer3 .title {
+	background-color: #7e7f00;
+}
+
+.drawer4 .title {
+	background-color: #2361ad;
+}
+
+.drawer comment {
+	width: 980px;
+	height: 344px;
+}
+
+/* 抽屉结束 */
+/*表格*/
+.www {
+	background-color: #FAEBD7;
+}
+
+.screen {
+	width: 980px;
+	border: 2px solid grey;
+	margin: 20px auto;
+}
+
+.screen1 {
+	font-size: 16px;
+	width: 100px;
+	height: 50px;
+	background-color: #ffaa7f;
+	color: #000000;
+	text-align: center;
+	border: 1px solid black;
+}
+
+.screen2 {
+	background-color: #F0F8FF;
+	width: 880px;
+}
+
+.screen li {
+	float: left;
+	font-size: 12px;
+	color: blue;
+	margin-left: 15px;
+	line-height: 50px;
+}
+
+.screen li:hover {
+	color: red;
+	cursor: pointer;
+
+}
+
+/*图片*/
+h2 {
+	font-size: 35px;
+	color: #ce1c72;
+	font-family: "隶书";
+}
+
+h4 {
+	text-align: center;
+	line-height: 300px;
+	color: #8f8f8f;
+}
+
+.current {
+	width: 980px;
+	height: 960px;
+	margin: 0 auto;
+	background-color: #F0F8FF;
+}
+
+.current1 {
+	width: 980px;
+	height: 300px;
+	background-color: #ffeec2;
+	margin-bottom: 5px;
+}
+
+.current1 li {
+	float: left;
+	width: 200px;
+	height: 300px;
+	background-color: white;
+	margin-left: 35px;
+	position: relative;
+}
+
+.current1 li img {
+	width: 200px;
+	height: 200px;
+}
+
+.a p {
+	font-size: 12px;
+	cursor: pointer;
+}
+
+.a p:hover {
+	color: blue;
+	cursor: pointer;
+}
+
+.a p span {
+	display: inline-block;
+	width: 50px;
+	height: 14px;
+	text-align: center;
+	line-height: 14px;
+	background-color: crimson;
+	font-size: 12px;
+	border-radius: 20px;
+	color: white;
+	font-weight: 700;
+}
+
+.a h3 {
+	font-size: 16px;
+	color: #DC143C;
+	margin-top: 5px;
+}
+
+.button1 {
+	width: 70px;
+	height: 20px;
+	font-size: 12px;
+	position: absolute;
+	right: 5px;
+	bottom: 5px;
+	border-radius: 15px;
+	color: gray;
+	border: 0.5px solid gray;
+
+}
+
+.button1:hover {
+	background-color: #DC143C;
+	border: 1px solid #DC143C;
+	color: white;
+	font-weight: 700;
+	cursor: pointer;
+
+}
+
+.button2 {
+	width: 70px;
+	height: 20px;
+	font-size: 12px;
+	position: absolute;
+	left: 5px;
+	bottom: 5px;
+	border-radius: 15px;
+	color: gray;
+	border: 0.5px solid gray;
+}
+
+.button2:hover {
+	background-color: orangered;
+	border: 1px solid orangered;
+	color: black;
+	font-weight: 700;
+	cursor: pointer;
+}
+
+.current1 li:hover {
+	box-shadow: gray 1px 1px 1px 1px;
+	cursor: pointer;
+}
+
+
+/*悬浮*/
+.tree {
+	position: fixed;
+	right: 2%;
+	bottom: 5%;
+}
+
+/*尾部*/
+#footer {
+	width: 100%;
+	height: 80px;
+	background: url(../img/footer.png) repeat-x;
+	color: #555;
+	text-align: center;
+	line-height: 60px;
+	margin-top: 50px;
+	font-size: 14px;
+}

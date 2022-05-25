@@ -1,0 +1,169 @@
+*{margin:0;padding:0;list-style:none;}
+body{font-family:"微软雅黑";font-size:20px;}
+a:link,a:visited{text-decoration:none;font-size: 20px;font-weight: bold;}
+#header{
+	width:100%;
+	height:90px;
+	background:url(../img/2.jpg) repeat-x;
+	border-bottom:3px solid #d5d5d5;
+}
+.nav{
+	width:980px;
+	margin:0 auto;
+}
+li{float:left;}
+li a{
+	display:inline-block;
+	height:91px;
+	width:119px;
+	text-align:center;
+	line-height:70px;
+}
+li a:hover{background:url(../img/3.png) center center;}
+/*导航栏结束*/
+.www{background-color: #FAEBD7;}
+/*上部分*/
+.zl{
+	width:980px;
+	height: 200px;
+	margin:0 auto;
+}
+.zl1{
+	width: 200px;
+	height: 200px;
+	background: url(../img/个人头像.jpg);
+	float: left;
+}
+.zl2{
+	float: left;
+	width: 780px;
+	height: 200px;
+}
+
+
+
+
+.sbf{
+	width: 980px;
+	height: 150px;
+	margin:0 auto;
+	border:3px dashed lightgrey;
+	border-radius: 80px;
+	background-color: #FFF;
+}
+.sbf1{
+	width: 196px;
+	height: 150px;
+	background: url(../img/个人1.png) no-repeat center center;
+	float: left;
+	text-align: center;
+	
+}
+.sbf1 p{
+	position: relative;
+	top:110px;
+}
+.sbf2 p{
+	position: relative;
+	top:110px;
+	left: 70px;
+}
+.sbf3 p{
+	position: relative;
+	top:110px;
+	left: 70px;
+}
+.sbf4 p{
+	position: relative;
+	top:110px;
+	left: 70px;
+}
+.sbf5 p{
+	position: relative;
+	top:110px;
+	left: 55px;
+}
+p:hover{
+	color: red;
+	cursor: pointer;
+}
+.sbf1:hover{box-shadow: gray 1px 1px 1px 1px;
+}
+.sbf2:hover{box-shadow: gray 1px 1px 1px 1px;
+}
+.sbf3:hover{box-shadow: gray 1px 1px 1px 1px;
+}
+.sbf4:hover{box-shadow: gray 1px 1px 1px 1px;
+}
+.sbf5:hover{box-shadow: gray 1px 1px 1px 1px;
+}
+.sbf2{
+	width: 196px;
+	height: 150px;
+	background: url(../img/个人2.png)
+	no-repeat center center;
+	float: left;
+}
+.sbf3{
+	width: 196px;
+	height: 150px;
+	background: url(../img/个人3.png) no-repeat center center;
+	float: left;
+}
+.sbf4{
+	width: 196px;
+	height: 150px;
+	background: url(../img/个人4.png) no-repeat center center;
+	float: left;
+}
+.sbf5{
+	width: 196px;
+	height: 150px;
+	background: url(../img/个人5.png) no-repeat center center;
+	float: left;
+}
+.zbf{
+	width: 980px;
+	height: 245px;
+	margin:0 auto;
+	border:3px solid lightgrey;
+}
+.bt{
+	width: 980px;
+	height: 50px;
+	margin:0 auto;
+}
+
+
+.banner{
+	width: 100%;
+	height: 300px;
+	background: url(../img/个人7.jpg) no-repeat center center;
+	background-size: 100% 100%;
+}
+
+
+/*js*/
+
+
+
+
+
+
+/*悬浮*/
+.tree{
+	position:fixed;
+	right:2%;
+	bottom:5%;
+}
+/*尾部*/
+#footer {
+	width: 100%;
+	height: 60px;
+	background: url(../img/footer.png) repeat-x;
+	color: #555;
+	text-align: center;
+	line-height: 80px;
+	margin-top: 50px;
+	font-size: 14px;
+}

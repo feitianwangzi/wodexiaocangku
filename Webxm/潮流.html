@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>潮流专栏</title>
+		<link href="css/潮流.css" rel="stylesheet" type="text/css"/>
+	</head>
+	<body class="www">
+		<div id="header">
+			<ul class="nav">
+				<li class="logo"><img src="./img/logo.jpg"/></li>
+				<li><a href="首页.html" target="_blank">首页</a></li>
+				<li><a href="潮流.html"  target="_blank">潮流专栏</a></li>
+				<li><a href="注册.html"  target="_blank">注册/登录</a></li>
+				<li><a href="开店.html"  target="_blank">免费开店</a></li>
+				<li><a href="介绍.html"  target="_blank">公司介绍</a></li>
+				<li><a href="个人.html"  target="_blank">个人中心</a></li>
+			</ul>
+		</div>
+		<!-- 抽屉 -->
+		
+		<div class="drawersBox">
+			<div class="drawer drawer1">
+				<div class="title">女士服装</div>
+				<div class="content"><img src="img/clbanner1.jpg" alt="交通行业"></div>
+			</div>
+			<div class="drawer drawer2">
+				<div class="title">男士服装</div>
+				<div class="content"><img src="img/clbanner2.jpg" alt="司法行业"></div>
+			</div>
+			<div class="drawer drawer3">
+				<div class="title">服饰分类</div>
+				<div class="content"><img src="img/clbanner3.jpg" alt="政府相关行业"></div>
+			</div>
+			<div class="drawer drawer4">
+				<div class="title">服装材质</div>
+				<div class="content"><img src="img/clbanner4.jpg" alt="其它行业"></div>
+			</div>
+		</div>
+		<script>
+			const drawersBox=document.querySelector('.drawersBox')
+			const drawers=drawersBox.querySelectorAll('.drawer')
+			let num=drawers.length
+			let titleW=65
+			let contentW=720
+			const titles=[]
+			for (let i=0;i<num;i++){
+				titles.push(drawers[i].querySelector('.title'))
+			}
+			for (let i=0;i<num;i++){
+				titles[i].addEventListener('click',function (){
+					for (let j=0;j<num;j++){
+						if(j<=i){
+							drawers[j].style.left=titleW*j+'px'
+						}else{
+							drawers[j].style.left=titleW*j+contentW+'px'
+						}
+					}
+				})
+			}
+		</script>
+		<!-- 抽屉结束 -->
+		<div class="screen">
+			<table>
+				<tr>
+					<td class="screen1">女装</td>
+					<td class="screen2">
+						<ul>
+							<li>小西装</li>
+							<li>风衣</li>
+							<li>毛呢大衣</li>
+							<li>羽绒服</li>
+							<li>打底衫</li>
+							<li>针织衫</li>
+							<li>连衣裙</li>
+							<li>半身裙</li>
+							<li>旗袍</li>
+							<li>汉服</li>
+							<li>牛仔裤</li>
+							<li>短裤</li>
+							<li>休闲裤&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+							<li>.&nbsp;&nbsp;.&nbsp;&nbsp;.</li>
+						</ul>
+					</td>
+				</tr>
+				<tr>
+					<td class="screen1">男装</td>
+					<td class="screen2">
+						<ul>
+							<li>&nbsp;&nbsp;T恤&nbsp;&nbsp;</li>
+							<li>夹克&nbsp;&nbsp;</li>
+							<li>&nbsp;&nbsp;卫衣&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+							<li>衬衫&nbsp;&nbsp;</li>
+							<li>&nbsp;唐装&nbsp;&nbsp;&nbsp;&nbsp;</li>
+							<li>汉服&nbsp;&nbsp;</li>							
+							<li>羽绒服&nbsp;&nbsp;</li>
+							<li>西服&nbsp;</li>
+							<li>棉服</li>
+							<li>牛仔裤</li>
+							<li>短裤</li>
+							<li>外衣&nbsp;&nbsp;</li>
+							<li>毛衣&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+							<li>.&nbsp;&nbsp;.&nbsp;&nbsp;.</li>
+						</ul>
+					</td>
+				</tr>
+				<tr>
+					<td class="screen1">分类</td>
+					<td class="screen2">
+						<ul>
+							<li>欧美&nbsp;</li>
+							<li>中国风&nbsp;&nbsp;</li>
+							<li>韩版&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+							<li>日式&nbsp;&nbsp;&nbsp;</li>
+							<li>流行&nbsp;&nbsp;&nbsp;&nbsp;</li>
+							<li>嘻哈&nbsp;&nbsp;&nbsp;&nbsp;</li>
+							<li>百搭&nbsp;&nbsp;&nbsp;</li>
+							<li>瑞丽&nbsp;&nbsp;</li>
+							<li>学院&nbsp;&nbsp;</li>
+							<li>民族&nbsp;</li>
+							<li>中性</li>
+							<li>田园&nbsp;&nbsp;</li>
+							<li>朋克&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+							<li>.&nbsp;&nbsp;.&nbsp;&nbsp;.</li>
+						</ul>
+					</td>
+				</tr>
+				<tr>
+					<td class="screen1">材质</td>
+					<td class="screen2">
+						<ul>
+							<li>棉布&nbsp;&nbsp;</li>
+							<li>麻布&nbsp;&nbsp;&nbsp;&nbsp;</li>
+							<li>丝绸&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+							<li>呢绒&nbsp;&nbsp;&nbsp;</li>
+							<li>皮革&nbsp;&nbsp;&nbsp;&nbsp;</li>
+							<li>化纤&nbsp;&nbsp;&nbsp;&nbsp;</li>
+							<li>雪纺&nbsp;&nbsp;&nbsp;</li>
+							<li>涤纶&nbsp;&nbsp;</li>
+							<li>锦纶&nbsp;&nbsp;</li>
+							<li>丙纶&nbsp;</li>
+							<li>氨纶</li>
+							<li>维纶&nbsp;&nbsp;</li>
+							<li>竹纤维&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+							<li>.&nbsp;&nbsp;.&nbsp;&nbsp;.</li>
+						</ul>
+					</td>
+				</tr>
+			</table>
+		</div>
+		<div class="current">
+			<h2>&nbsp;&nbsp;猜你喜欢</h2>
+			<ul class="current1" >
+				<li class="a">
+					<div class="imges1">
+						<img src="img/潮流1.webp" >
+					</div>
+					<p> <span>热卖</span> betu百图 女装小香风蝴蝶结雪纺衬衫女百搭衬衣1909T38</p>
+					<h3>￥94.99</h3>
+					<button type="button" class="button2">加购物车</button>
+					<button type="button" class="button1">立即购买</button>
+							
+				</li>
+				<li class="a">
+					<div class="imges1">
+						<img src="./img/潮流2.webp" >
+					</div>
+					<p> <span>热卖</span> betu百图 女装长袖衬衫女春季新款简约白衬衣潮2101T24</p>
+					<h3>￥192.00</h3>
+					<button type="button" class="button2">加购物车</button>
+					<button type="button" class="button1">立即购买</button>
+				</li>
+				<li class="a">
+					<div class="imges1">
+						<img src="./img/潮流3.webp" >
+					</div>
+					<p> <span>热卖</span>betu百图 女装宽松韩版柔软牛仔长外套潮百搭新品2002T28 </p>
+					<h3>￥152.00</h3>
+					<button type="button" class="button2">加购物车</button>
+					<button type="button" class="button1">立即购买</button>
+				</li>
+				<li class="a">
+					<div class="imges1">
+						<img src="./img/潮流4.webp" >
+					</div>
+					<p> <span>热卖</span>betu百图女装时尚长袖衬衫宽松法式雪纺衫新款JD2102T28</p>
+					<h3>￥155.00</h3>
+					<button type="button" class="button2">加购物车</button>
+					<button type="button" class="button1">立即购买</button>
+				</li>
+				<h4>. . .</h4>
+			</ul>
+			<ul class="current1" >
+				<li class="a">
+					<div class="imges1">
+						<img src="./img/潮流5.webp" >
+					</div>
+					<p> <span>热卖</span> MLB官方 男女帽子韩版NYLA复古棒球帽刺绣LOGO 32CP66 </p>
+					<h3>￥239.00</h3>
+					<button type="button" class="button2">加购物车</button>
+					<button type="button" class="button1">立即购买</button>
+							
+				</li>
+				<li class="a">
+					<div class="imges1">
+						<img src="./img/潮流6.webp" >
+					</div>
+					<p> <span>热卖</span> BLUE ERDOS配饰 春夏新品百搭真丝雪纺字母印花长巾 黑+白</p>
+					<h3>￥209.00</h3>
+					<button type="button" class="button2">加购物车</button>
+					<button type="button" class="button1">立即购买</button>
+				</li>
+				<li class="a">
+					<div class="imges1">
+						<img src="./img/潮流7.webp" >
+					</div>
+					<p> <span>热卖</span>ohsunny 渔夫帽女夏季薄款防紫外线户外时尚防晒帽百搭 </p>
+					<h3>￥138.00</h3>
+					<button type="button" class="button2">加购物车</button>
+					<button type="button" class="button1">立即购买</button>
+				</li>
+				<li class="a">
+					<div class="imges1">
+						<img src="./img/潮流8.webp" >
+					</div>
+					<p> <span>热卖</span>BLUE ERDOS配饰 21春夏新品纯色时尚百搭牛皮革女包</p>
+					<h3>￥699.00</h3>
+					<button type="button" class="button2">加购物车</button>
+					<button type="button" class="button1">立即购买</button>
+				</li>
+				<h4>. . .</h4>
+			</ul>
+			<ul class="current1" >
+				<li class="a">
+					<div class="imges1">
+						<img src="./img/潮流9.webp" >
+					</div>
+					<p> <span>热卖</span>云上生活 宽松显瘦2021春季新款休闲九分休闲裤女K7533 </p>
+					<h3>￥123.00</h3>
+					<button type="button" class="button2">加购物车</button>
+					<button type="button" class="button1">立即购买</button>
+							
+				</li>
+				<li class="a">
+					<div class="imges1">
+						<img src="./img/潮流10.webp" >
+					</div>
+					<p> <span>热卖</span>德玛纳 藏青工装连体裤女2021春季新款本草纲目印花套装</p>
+					<h3>￥254.00</h3>
+					<button type="button" class="button2">加购物车</button>
+					<button type="button" class="button1">立即购买</button>
+				</li>
+				<li class="a">
+					<div class="imges1">
+						<img src="./img/潮流11.webp" >
+					</div>
+					<p> <span>热卖</span>Donoratico达衣岩2021春牛仔裤(月光深处的小裁缝之二)</p>
+					<h3>￥615.10</h3>
+					<button type="button" class="button2">加购物车</button>
+					<button type="button" class="button1">立即购买</button>
+				</li>
+				<li class="a">
+					<div class="imges1">
+						<img src="./img/潮流12.webp" >
+					</div>
+					<p> <span>热卖</span>茵曼2021春装新款高弹打底裤女显瘦修身百搭瑜伽运动裤子</p>
+					<h3>￥83.00</h3>
+					<button type="button" class="button2">加购物车</button>
+					<button type="button" class="button1">立即购买</button>
+				</li>
+				<h4>. . .</h4>
+			</ul>
+		</div>
+		
+		
+	<!--悬浮-->
+			</div>
+			<div class="tree">
+				<img src="img/二维码.jpg"/></div>
+			</div>	
+		
+		<div id="footer">
+			衣恋购物网站版权所有2020-2021京ICP备1000113200156号&nbsp;&nbsp;
+							京公网安备110108007702</div>
+	</body>
+</html>

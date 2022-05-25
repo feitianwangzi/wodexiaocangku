@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>注册登录</title>
+		<link href="css/注册.css" rel="stylesheet" type="text/css"/>
+	</head>
+	<body class="www">
+		<div id="header">
+			<ul class="nav">
+				<li class="logo"><img src="./img/logo.jpg"/></li>
+				<li><a href="首页.html" target="_blank">首页</a></li>
+				<li><a href="潮流.html"  target="_blank">潮流专栏</a></li>
+				<li><a href="注册.html"  target="_blank">注册/登录</a></li>
+				<li><a href="开店.html"  target="_blank">免费开店</a></li>
+				<li><a href="介绍.html"  target="_blank">公司介绍</a></li>
+				<li><a href="个人.html"  target="_blank">个人中心</a></li>
+			</ul>
+		</div>
+		<div id="content">
+			<!-- <p>一次简单的注册，永久自动的登录。</p><br/><br/> -->
+			<form action="#" method="post" class="one">
+				<h1>您的账号信息</h1>
+				<table class="content">
+					<tr>
+						<td class="left">注册方式：</td>
+						<td>
+							<label for="one"><input type="radio" name="sex" id="one"/>微信注册</label>
+							&nbsp;&nbsp;&nbsp;&nbsp;
+							<label for="two"><input type="radio" name="sex" id="two"/>QQ注册</label>
+							&nbsp;&nbsp;&nbsp;&nbsp;
+							<label for="two"><input type="radio" name="sex" id="two"/>手机号码注册</label>
+						</td>
+					</tr>
+					<tr>
+						<td class="left">注册账号：</td>
+						<td><input type="text" class="right"/></td>
+					</tr>
+					<tr>
+						<td class="left">昵称：</td>
+						<td><input type="text" class="right"/></td>
+					</tr>
+					<tr>
+						<td class="left">登录密码：</td>
+						<td><input type="password" maxlength="8" class="right"/></td>
+					</tr>
+				</table>
+				<h1>您的个人信息</h1>
+				<table class="content">
+					<tr>
+						<td class="left">性别：</td>
+						<td>
+							<label for="boy"><input type="radio" name="sex" id="boy"/>男</label>
+							&nbsp;&nbsp;&nbsp;&nbsp;
+							<label for="girl"><input type="radio" name="sex" id="girl"/>女</label>
+						</td>
+					</tr>
+					<tr>
+						<td class="left">服饰偏好：</td>
+						<td>
+							<input type="checkbox"/>古风&nbsp;&nbsp;&nbsp;
+							<input type="checkbox"/>嘻哈&nbsp;&nbsp;&nbsp;
+							<input type="checkbox"/>潮流&nbsp;&nbsp;&nbsp;
+							<input type="checkbox"/>个性&nbsp;&nbsp;&nbsp;
+							<input type="checkbox"/>炸街&nbsp;&nbsp;&nbsp;
+							<input type="checkbox"/>欧美
+						</td>
+					</tr>
+					<tr>
+						<td class="left">注册失败？请反馈原因：</td>
+						<td>
+							<textarea cols="60" rows="2"></textarea>
+						</td>
+					</tr>
+				</table>
+			</form><br/>		
+			<div class="btn111" onclick="show()">
+				<a href="首页.html">注 册</a>
+				<a href="首页.html" class="dl">登 录</a>
+				</div>
+	</div>
+	
+	
+	
+	<script type="text/javascript">
+		function show()
+		{
+			alert("注册成功，已为您自动登录")
+		};
+	</script>
+	
+	
+	<!--悬浮-->
+			</div>
+			<div class="tree">
+				<img src="img/二维码.jpg"/></div>
+			</div>
+	
+	<div id="footer">衣恋购物网站版权所有2020-2021京ICP备1000113200156号&nbsp;&nbsp;
+							京公网安备110108007702</div>
+	</body>
+</html>
