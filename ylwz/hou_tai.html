@@ -1,0 +1,188 @@
+
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" >
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>后台管理</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/index.css" rel="stylesheet">
+		<style type="text/css">
+			*{
+				font-family:"宋体";
+			}
+		</style>
+  </head>
+  <body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid"><!-- 自适应布局 -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">后台管理中心</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-left">
+            <li class=""><a href="#">首页</a></li>
+						 <li class="dropdown">
+						                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">功能 <span class="caret"></span></a>
+						                <ul class="dropdown-menu">
+															<!-- 创建下拉菜单 -->
+						                  <li class="dropdown-header">业务功能</li>
+															<!-- 下拉菜单中添加标题 -->
+						                  <li><a href="#">物流信息建立</a></li>
+						                  <li><a href="#">物流信息查询</a></li>
+						                  <li><a href="#">物流信息管理</a></li>
+						                  <li role="separator" class="divider"></li>
+						                 <li class="dropdown-header">系统功能</li>
+						                 <li><a href="#">设置</a></li>
+						                </ul>
+						              </li>
+            <li><a href="#">帮助</a></li>
+          </ul>
+          <form class="navbar-form navbar-right">
+            <input type="text" class="form-control" placeholder="用户名...">
+						<input type="password" class="form-control" placeholder="密码...">
+							<button type="button" class="btn btn-default">登录</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <div class="container-fluid"><!-- 百分百宽的容器 -->
+      <div class="row">
+        <div class="col-sm-3 col-md-2 sidebar">
+					<ul class="nav nav-sidebar">
+						<li class="active"><a href="#">首页 <span class="sr-only">(current)</span></a></li>
+					</ul>
+          <ul class="nav nav-sidebar">
+            <li><a href="#">物流信息建立</a></li>
+            <li><a href="#">物流信息查询</a></li>
+            <li><a href="#">物流信息管理</a></li>
+          </ul>
+          <ul class="nav nav-sidebar"><!-- 侧边导航条 -->
+            <li><a href="">设置</a></li>
+            <li><a href="">帮助</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+          <h1 class="page-header">后台管理控制台</h1>
+					<button type="button" class="btn btn-default btn-lg">操作1</button>
+					<button type="button" class="btn btn-info btn-lg">操作2</button>
+					<button type="button" class="btn btn-warning btn-lg">操作3</button>
+					<button type="button" class="btn btn-success btn-lg">操作4</button>
+					<button type="button" class="btn btn-primary btn-lg">操作5</button>
+					<button type="button" class="btn btn-danger btn-lg">操作6</button>
+					<div class="row top1"></div>
+          <div class="row">
+            <div class="col-xs-12 col-sm-6">
+            <div class="panel panel-primary">
+							<div class="panel-heading">最新订单提醒</div>
+							  <div class="panel-body">
+							    <div class="alert alert-success" role="alert"><strong>提示</strong> 您的订单（20220523）JT0005591172472 已签收！</div>  
+							    <div class="alert alert-warning" role="alert"><strong>提示</strong> 您的订单（20220527）JT0005591186946 已发货！</div>
+									<div class="alert alert-danger" role="alert"><strong>提示</strong> 您的订单（20220528）客户付款延迟！</div>			
+							  </div>
+						</div>
+            </div>
+            <div class="col-xs-12 col-sm-6">
+             <div class="panel panel-primary">
+             	<div class="panel-heading">物流任务</div>
+								<ul class="nav nav-divider nav-pills nav-stacked">
+					  <li role="presentation" class="alert top3 top4" >
+						  <a href="#" class="alert-link alert alert-info ">待发货<span class="badge pull-right">99+</span></a>
+						</a></li>
+					  <li role="presentation " class="alert top3">
+						  <a href="#" class="alert-link alert alert-info  ">待收货<span class="badge pull-right" >89</span></a>
+						</li>
+					  <li role="presentation" class="alert top3 top5">
+						  <a href="#" class="alert-link alert alert-info ">确认收货<span class="badge pull-right">56</span></a>
+						</a>
+						</li>
+					</ul>
+             </div>
+            </div>
+          </div>
+					<div class="row">
+					  <div class="col-xs-12 col-sm-6">
+					    <div class="panel panel-primary">
+					    	<div class="panel-heading">最新订单</div>
+					    	  <div class="panel-body">
+					    	    <table class="table table-striped">
+											<!-- 每行添加斑马条纹样式 -->
+											<thead>
+												<tr>
+													<th>#</th>
+													<th>商品</th>
+													<th>数量</th>
+													<th>总金额</th>
+													<th>昵称</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>1</td>
+													<td>LINGLAI 炸街外套法式名媛气质短款西装xL</td>
+													<td>1</td>
+													<td>73</td>
+													<td>幸福朵朵开</td>
+												</tr>
+												<tr>
+													<td>2</td>
+													<td>高腰短款白色短袖T恤女xxL</td>
+													<td>2</td>
+													<td>331</td>
+													<td>所念皆星河</td>
+												</tr>
+												<tr>
+													<td>3</td>
+													<td>2021夏新款法式浪漫开叉小雏菊裙子xxL</td>
+													<td>1</td>
+													<td>208</td>
+													<td>河间太子</td>
+												</tr>
+												</tbody>
+					    	    </table>
+										<button type="button" class="btn btn-primary ">查看详细 &raquo;</button>
+					    	  </div>
+					    </div>
+					  </div>
+					  <div class="col-xs-12 col-sm-6">
+					   <div class="panel panel-primary"><!-- 面板的蓝色背景 -->
+					   	<div class="panel-heading">业绩达标进度</div>
+					   	  <div class="panel-body">
+								<h3> <span class="label label-info">月业绩</span><div class="row"></div></h3>
+								<div class="progress">
+								  <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 89%">
+								    <span class="sr-only">89% Complete</span>
+								  </div>
+								</div>
+								<h3><span class="label label-info ">季业绩</span><div class="row"></div></h3>
+								<div class="progress">
+									<div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 62%">
+										<span class="sr-only">62% Complete</span>
+									</div>
+								</div>
+					   	  </div>
+					   </div>
+					  </div>
+					</div>
+        </div>
+      </div>
+    </div>
+		<!--js-->
+			<div style="font-size: 18px;">
+				<script type="text/javascript">
+					alert("限管理员进入！");
+					prompt("请输入管理员密码：");
+				</script>
+			</div>
+		<!--js结束-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>

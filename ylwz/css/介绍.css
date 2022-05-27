@@ -5,6 +5,7 @@ a:link,a:visited{text-decoration:none;font-size: 20px;font-weight: bold;}
 	width:100%;
 	height:90px;
 	background:url(../img/2.jpg) repeat-x;
+	margin: 0 ;
 	border-bottom:3px solid #d5d5d5;
 }
 .nav{
@@ -157,6 +158,20 @@ li a:hover{background:url(../img/3.png) center center;}
 	right:2%;
 	bottom:5%;
 }
+.ht {
+	width: 30px;
+	height: 60px;
+	font-size: 18px;
+	position:fixed;
+	right:0;
+	top: 2%;
+	border-radius: 8px 0 0 8px;
+	background-color: #34312d;
+}
+.ht a{
+	color: #ffffff;
+}
+
 /*尾部*/
 #footer {
 	width: 100%;

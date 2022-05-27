@@ -21,22 +21,19 @@ li a{
 }
 li a:hover{background:url(../img/3.png) center center;}
 /*导航栏结束*/
-
 .www{background-color: #FAEBD7;}
-
-
-
-
+.error{
+	color: red;
+}
+.info {
+	color: green;
+}
 /*注册*/
 #content{
 	width: 830px;
 	height: 750px;
-	/* background: url(../img/注册背景.jpg) no-repeat; */
 	border: 3px solid black;
 	margin: 50px auto;
-	/* margin-bottom: 100px; */
-	
-	
 	padding-left: 150px;
 }
 p{
@@ -86,6 +83,19 @@ textarea{
 	right:2%;
 	bottom:5%;
 }
+.ht {
+	width: 30px;
+	height: 60px;
+	font-size: 18px;
+	position:fixed;
+	right:0;
+	top: 2%;
+	border-radius: 8px 0 0 8px;
+	background-color: #34312d;
+}
+.ht a{
+	color: #ffffff;
+}
 /*注册结束*/
 #footer {
 	width: 100%;
@@ -96,17 +106,17 @@ textarea{
 	line-height: 80px;
 	font-size: 14px;
 }
-.btn111 a{
-	font-size: 25px;
-	background-color: #ff6385;
-	border-radius: 5px;
-	color: white;
-	text-align: center;
-	padding: 3px;
-}
 .dl {
-	margin-left: 20px;
+	font-size: 25px;
+	background-color: #5bc0de;
+	border-radius: 8px;
+	text-align: center;
+	padding: 5px 10px 5px 10px;
+	margin-top: 40px;
 }
-.btn111:hover {
+.dl a {
+	color: white;
+}
+.dl:hover {
 	cursor: pointer;
 }

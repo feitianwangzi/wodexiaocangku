@@ -9,7 +9,7 @@
 		<div id="header">
 			<ul class="nav">
 				<li class="logo"><img src="./img/logo.jpg"/></li>
-				<li><a href="shou_ye.html" target="_blank">首页</a></li>
+				<li><a href="index.html" target="_blank">首页</a></li>
 				<li><a href="chao_liu.html"  target="_blank">潮流专栏</a></li>
 				<li><a href="zhu_ce.html"  target="_blank">注册/登录</a></li>
 				<li><a href="kai_dian.html"  target="_blank">免费开店</a></li>
@@ -19,8 +19,8 @@
 		</div>
 		<div id="content">
 			<!-- <p>一次简单的注册，永久自动的登录。</p><br/><br/> -->
-			<form action="#" method="post" class="one">
-				<h1>您的账号信息</h1>
+			<form  class="one" id="form">
+				<h1>您的账号信息（必填）</h1>
 				<table class="content">
 					<tr>
 						<td class="left">注册方式：</td>
@@ -34,18 +34,18 @@
 					</tr>
 					<tr>
 						<td class="left">注册账号：</td>
-						<td><input type="text" class="right"/></td>
+						<td><input name="account" type="text" class="right"/></td>
 					</tr>
 					<tr>
 						<td class="left">昵称：</td>
-						<td><input type="text" class="right"/></td>
+						<td><input type="text" name="nicheng" class="right"/></td>
 					</tr>
 					<tr>
 						<td class="left">登录密码：</td>
-						<td><input type="password" maxlength="8" class="right"/></td>
+						<td><input type="password" name="pwd" maxlength="8" class="right"/></td>
 					</tr>
 				</table>
-				<h1>您的个人信息</h1>
+				<h1>您的个人信息（选填）</h1>
 				<table class="content">
 					<tr>
 						<td class="left">性别：</td>
@@ -73,27 +73,56 @@
 						</td>
 					</tr>
 				</table>
+					<button onclick="show()" href="shou_ye.html" class="dl"><a href="index.html">登 录</a></button>
+				
 			</form><br/>		
-			<div class="btn111" onclick="show()">
-				<a href="首页.html">注 册</a>
-				<a href="首页.html" class="dl">登 录</a>
-				</div>
+			
 	</div>
 	
 	
-	
-	<script type="text/javascript">
+	<script src="./js/jquery.js"></script>
+	<script>
 		function show()
 		{
 			alert("注册成功，已为您自动登录")
 		};
+		
+		function showInfo(el,msg,className = 'error'){
+		    el.parent().find('span').remove() //去除原有提示信息
+		    if (msg) {
+		        let span=$('<span>').addClass(className).text(msg)
+		        el.parent().append(span) //追加到页面上
+		    }
+		}
+		$('[name="account"]').on('blur',function() {
+			if(!$(this).val().trim()){
+					showInfo($(this),' 账号未填写','error')
+			}else{
+				  showInfo($(this),'')
+			}
+		})
+		$('[name="nicheng"]').on('blur',function() {
+			if(!$(this).val().trim()){
+					showInfo($(this),' 昵称未填写','error')
+			}else{
+				  showInfo($(this),'')
+			}
+		})
+		$('[name="pwd"]').on('blur',function() {
+			if(!$(this).val().trim()){
+					showInfo($(this),' 密码未填写','error')
+			}else{
+				  showInfo($(this),'')
+			}
+		})
+
 	</script>
-	
 	
 	<!--悬浮-->
 			</div>
 			<div class="tree">
 				<img src="img/二维码.jpg"/></div>
+				<button type="button" class="ht"><a href="hou_tai.html">后台</a></button>
 			</div>
 	
 	<div id="footer">衣恋购物网站版权所有2020-2021京ICP备1000113200156号&nbsp;&nbsp;
